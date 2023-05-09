@@ -11,7 +11,12 @@ export default function ImageUpload() {
     <div className={styles.ImageUpload}>
       <div>
         <FormLabel>Fotoğraf Yükle</FormLabel>
-        <Input type="file" accept="image/*" onChange={onImageChange} />
+        <Input
+          className={"custom-file-input"}
+          type="file"
+          accept="image/png, image/gif, image/jpeg"
+          onChange={onImageChange}
+        />
       </div>
 
       <div className={styles.GeneratedImageWrapper}>

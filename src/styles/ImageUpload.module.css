@@ -39,9 +39,7 @@
   bottom: 3%;
 
   width: 40%;
-  height: 40%;
-
-  border-radius: 50%;
+  height: auto;
 
   object-fit: contain;
 }
