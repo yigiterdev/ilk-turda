@@ -1,5 +1,5 @@
 import styles from "@/styles/ImageUpload.module.css";
-import {Button, FormLabel, Input} from "@chakra-ui/react";
+import {Button, FormLabel} from "@chakra-ui/react";
 import html2canvas from "html2canvas";
 import {useRef, useState} from "react";
 
@@ -11,7 +11,7 @@ export default function ImageUpload() {
     <div className={styles.ImageUpload}>
       <div>
         <FormLabel>Fotoğraf Yükle</FormLabel>
-        <Input
+        <input
           className={"custom-file-input"}
           type="file"
           accept="image/png, image/gif, image/jpeg"

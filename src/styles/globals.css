@@ -5,10 +5,6 @@ body {
   z-index: 1;
 }
 
-input {
-  border: none;
-}
-
 .custom-file-input::-webkit-file-upload-button {
   visibility: hidden;
 }
@@ -27,8 +23,4 @@ input {
 
   font-weight: 700;
   font-size: 12px;
-}
-
-.custom-file-input:hover::before {
-  border-color: black;
 }
