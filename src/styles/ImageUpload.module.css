@@ -1,0 +1,24 @@
+.GeneratedImage {
+  position: relative;
+
+  width: 300px;
+  height: 300px;
+}
+
+.BackgroundImage {
+  width: 100%;
+  height: 100%;
+}
+
+.UploadedImage {
+  position: absolute;
+  left: 3%;
+  bottom: 3%;
+
+  width: 40%;
+  height: 40%;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
