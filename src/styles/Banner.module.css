@@ -1,0 +1,13 @@
+.Banner {
+  padding: 8px 12px;
+  margin-bottom: 30px;
+
+  color: #fff;
+  background-color: #ed2525;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+
+  text-align: center;
+}

@@ -1,3 +1,26 @@
+.ImageUpload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 20px;
+}
+
+.GeneratedImageWrapper {
+  width: fit-content;
+  height: fit-content;
+
+  padding: 20px;
+  margin: 32px 0 20px;
+
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .GeneratedImage {
   position: relative;
 
@@ -20,5 +43,5 @@
 
   border-radius: 50%;
 
-  object-fit: cover;
+  object-fit: contain;
 }

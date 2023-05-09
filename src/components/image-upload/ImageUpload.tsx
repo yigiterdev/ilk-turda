@@ -1,4 +1,5 @@
 import styles from "@/styles/ImageUpload.module.css";
+import {Button, FormLabel, Input} from "@chakra-ui/react";
 import html2canvas from "html2canvas";
 import {useRef, useState} from "react";
 
@@ -7,19 +8,24 @@ export default function ImageUpload() {
   const imageWrapperRef = useRef<HTMLDivElement>(null);
 
   return (
-    <>
-      <h3>Fotograf Yukle</h3>
-
-      <input type="file" accept="image/*" onChange={onImageChange} />
-
-      <div ref={imageWrapperRef} className={styles.GeneratedImage}>
-        <img className={styles.BackgroundImage} src={"/bg-image.jpg"} />
-
-        {image && <img className={styles.UploadedImage} src={image} />}
+    <div className={styles.ImageUpload}>
+      <div>
+        <FormLabel>Fotoğraf Yükle</FormLabel>
+        <Input type="file" accept="image/*" onChange={onImageChange} />
       </div>
 
-      <button onClick={exportAsImage}>Export</button>
-    </>
+      <div className={styles.GeneratedImageWrapper}>
+        <div ref={imageWrapperRef} className={styles.GeneratedImage}>
+          <img className={styles.BackgroundImage} src={"/bg-image.jpg"} />
+
+          {image && <img className={styles.UploadedImage} src={image} />}
+        </div>
+      </div>
+
+      <Button colorScheme="red" onClick={exportAsImage}>
+        Fotoğrafı İndir
+      </Button>
+    </div>
   );
 
   function onImageChange(e: React.ChangeEvent<HTMLInputElement>) {
