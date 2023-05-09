@@ -5,6 +5,10 @@ body {
   z-index: 1;
 }
 
+input {
+  border: none;
+}
+
 .custom-file-input::-webkit-file-upload-button {
   visibility: hidden;
 }
