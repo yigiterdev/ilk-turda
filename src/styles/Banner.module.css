@@ -13,3 +13,9 @@
   line-height: 24px;
   font-weight: 700;
 }
+
+.BannerLinks {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

@@ -35,14 +35,12 @@
 
 .UploadedImage {
   position: absolute;
-  left: 3%;
-  bottom: 3%;
+  left: 5%;
+  bottom: 5%;
 
-  width: 40%;
-  height: auto;
-
-  width: 40%;
+  width: auto;
   height: 40%;
+
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
 }

@@ -44,7 +44,7 @@ export default function ImageUpload() {
       scale: 5
     });
 
-    const image = canvas.toDataURL("image/png", 5.0);
+    const image = canvas.toDataURL("image/png", 1.0);
     downloadImage(image);
   }
 
